@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:paddingTop="5dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chatpic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chatname"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/signika_light"
+                android:paddingLeft="3dp"
+                android:paddingTop="8dp"
+                android:text="Sample Name"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chatmsg"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:fontFamily="@font/signika_light"
+                android:paddingLeft="3dp"
+                android:paddingTop="5dp"
+                android:text="Tap to Chat"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chattime"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/signika_light"
+            android:gravity="bottom"
+            android:text=""
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/grey" />
+
+</LinearLayout>

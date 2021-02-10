@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/voice"
+        android:icon="@drawable/ic_baseline_call_24"
+        android:title="voicecall"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/video"
+        android:icon="@drawable/ic_baseline_video_call_24"
+        android:title="videocall"
+        app:showAsAction="always" />
+</menu>
